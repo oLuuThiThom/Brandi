@@ -1,0 +1,131 @@
+// ======================================================
+// Layout :: Header
+// ======================================================
+// Start classname with prefix `l-`
+
+header {
+  height: 70px;
+  background: linear-gradient(to right, $cl-black, $cl-gray, $cl-black);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  a:not([href]):not([tabindex]) {
+    color: $cl-white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: $font-weight-base;
+    &:hover {
+      color: $cl-active;
+      opacity: .8;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__title {
+    a {
+      font-size: $font-size-extra-large;
+      font-family: $font-family-special;
+      color: $cl-white;
+    }
+  }
+  .form-control {
+    border: 0;
+    vertical-align: bottom;
+    border-radius: 0;
+    padding: 0;
+  }
+  span {
+    display: inline-block;
+    border-left: 1px solid $cl-gray;
+    padding-left: 20px;
+    line-height: 16px;
+    font-weight: $font-weight-light;
+    color: $cl-white;
+    font-size: $font-size-medium;
+    height: 17px;
+    margin-left: 30px;
+    opacity: .3;
+
+    @include breakpoint-down(phone) {
+      display: none;
+    }
+  }
+}
+.dropdown {
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &.active {
+      border-top: 2px solid $cl-active;
+    }
+  }
+
+  @include breakpoint-down(phone) {
+    display: none;
+  }
+}
+.navbar-toggler {
+  display: none;
+  line-height: 30px;
+  color: $cl-white;
+  cursor: pointer;
+  &:hover {
+    color: $cl-gray;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  @include breakpoint-down(phone) {
+    display: block;
+  }
+}
+.sidebar-show {
+  display: block;
+  transition: all .5s;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 185px;
+  border-bottom: 2px solid $cl-gray;
+  .nav-item {
+    height: auto;
+    padding: 0 50px;
+    background: $cl-green-dark;
+    &:hover {
+      background: $cl-white;
+      border-left: 2px solid $cl-gray;
+      border-right: 2px solid $cl-gray;
+    }
+    &:hover .nav-link {
+      color: $cl-active;
+    }
+    &:last-child:hover {
+      border-bottom: 2px solid $cl-gray;
+    }
+  }
+}
+

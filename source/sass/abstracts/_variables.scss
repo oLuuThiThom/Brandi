@@ -1,0 +1,52 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Paths
+$path-image: '../images';
+$path-fonts: '../fonts';
+
+// Fonts
+// >> Font-family
+$font-family-base : 'Open Sans', 'sans-serif';
+$font-family-special : 'Pacifico', 'sans-serif';
+$font-icon: 'Font Awesome 5 Free';
+// >> Font-size
+$font-size-extral-small: 10px;
+$font-size-small  : 12px;
+$font-size-base   : 14px;
+$font-size-medium : 16px;
+$font-size-large  : 18px;
+$font-size-extra-large: 28px;
+// >> Font-weight
+$font-weight-light: 300;
+$font-weight-base : 400;
+$font-weight-bold : 600;
+$font-weight-extra-bold: 900;
+
+// Borders
+$border-radius-small : 2px;
+$border-radius-base  : 4px;
+$border-radius-medium: 8px;
+
+// z-index
+$z-indexes: (
+  base    : 1,
+  under   : -1,
+  modal   : 1001,
+  sidebar : 1000
+);
+
+$cl-white : #fff;
+$cl-black : #062033;
+$cl-black2: #000;
+$cl-black-light: #2c3c4a;
+$cl-black-light1: rgb(37, 60, 75);
+$cl-gray: #ccc;
+$cl-gray-light: #f4f7f9;
+$cl-gray-light2: #e6e8ea;
+$cl-grey: #c2d2df;
+$cl-blue : #00f;
+$cl-green: #0feb9e;
+$cl-green-dark: #0eb493;
+$cl-active: #32b0ee;
