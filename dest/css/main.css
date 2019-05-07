@@ -11427,7 +11427,7 @@ header {
     width: 42px;
     height: 42px;
     line-height: 40px;
-    background: #00000045;
+    background: rgba(0, 0, 0, 0.3);
     margin-right: 4px; }
 
 .card-img-top {
@@ -11610,7 +11610,7 @@ header {
 .map {
   padding-bottom: 0;
   border-bottom: 5px solid #000;
-  max-height: 220px; }
+  max-height: 225px; }
 
 .footer {
   background: #0eb493;

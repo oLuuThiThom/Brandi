@@ -5,7 +5,7 @@
 
 .banner {
   min-height: 800px;
-  background: url('../images/bg1.jpg') center center;
+  background: url('#{$path-image}/bg1.jpg') center center;
   background-size: cover;
   position: relative;
 
@@ -31,7 +31,7 @@
       color: $cl-white;
       font-family: $font-family-base;
       font-size: 48px;
-      font-weight: 300;
+      font-weight: $font-weight-light;
       line-height: 0;
       margin-top: 18px;
       padding-bottom: 42px;
@@ -44,7 +44,7 @@
       color: $cl-green;
     }
     &--more {
-      font-size: 18px;
+      font-size: $font-size-large;
       height: 18px;
       position: relative;
       z-index: 51;
@@ -75,13 +75,13 @@
   h2 {
     color: $cl-white;
     font-family: $font-family-base;
-    font-size: 62px;
+    font-size: $font-size-extra-large3;
     font-weight: $font-weight-light;
     text-align: center;
     margin-bottom: 18px;
 
     @include breakpoint-down(phone) {
-      font-size: 48px;
+      font-size: $font-size-extra-large2;
     }
   }
   &__social {
@@ -115,7 +115,7 @@
   &-title {
     color: $cl-green-dark;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: $font-size-extra-large;
     font-weight: $font-weight-extra-bold - 100;
     text-align: center;
     padding-top: 77px;
@@ -314,7 +314,7 @@
     border-radius: 50%;
   }
   div {
-    font-size: 16px;
+    font-size: $font-size-medium;
     font-weight: $font-weight-bold;
     span {
       font-weight: $font-weight-light;
@@ -342,7 +342,7 @@
       width: 42px;
       height: 42px;
       line-height: 40px;
-      background: #00000045;
+      background: rgba($cl-black2, .3);
       margin-right: 4px;
     }
   }
@@ -543,7 +543,7 @@ $span: 'span';
       }
       i {
         color: $cl-green-dark;
-        font-size: 23px;
+        font-size: $font-size-extra-large - 5;
       }
       span {
         margin-left: 10px;
@@ -564,7 +564,7 @@ $span: 'span';
     padding-left: 37px;
     i {
       display: block;
-      font-size: 22px;
+      font-size: $font-size-large + 4;
       color: $cl-grey;
       margin-bottom: 31px;
       text-align: left;
@@ -574,7 +574,7 @@ $span: 'span';
 .map {
   padding-bottom: 0;
   border-bottom: 5px solid $cl-black2;
-  max-height: 220px;
+  max-height: 225px;
 }
 .footer {
   background: $cl-green-dark;
@@ -598,14 +598,14 @@ $span: 'span';
   }
   &__desc {
     color: $cl-white;
-    font-size: 13px;
+    font-size: $font-size-base - 1;
     line-height: 25px;
     margin-bottom: 25px;
     font-weight: $font-weight-bold - 100;
   }
   &__title {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: $font-size-large;
     font-weight: $font-weight-bold;
     color: darken($cl-white, 15%);
 
@@ -650,8 +650,8 @@ $span: 'span';
     margin-bottom: 11.5px;
     a {
       color: $cl-white;
-      font-size: 13px;
-      font-weight: 500;
+      font-size: $font-size-base - 1;
+      font-weight: $font-weight-bold - 100;
       &:hover {
         color: $cl-black;
       }
@@ -661,7 +661,7 @@ $span: 'span';
     color: $cl-white;
     border-left: 1px solid $cl-black-light;
     padding-left: 12px;
-    font-size: 13px;
+    font-size: $font-size-base - 1;
 
     @include breakpoint-down(smallphone) {
       border: 0;
@@ -672,7 +672,7 @@ $span: 'span';
     i {
       color: $cl-black;
       display: inline-block;
-      font-size: 13px;
+      font-size: $font-size-base - 1;
     }
     a {
       font-weight: $font-weight-base;
@@ -685,7 +685,7 @@ $span: 'span';
   &__copy {
     margin-bottom: 25px;
     padding-left: 12px;
-    font-size: 13px;
+    font-size: $font-size-base - 1;
     font-weight: $font-weight-base;
 
     @include breakpoint-down(smallphone) {
