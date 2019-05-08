@@ -29,3 +29,22 @@ ol {
   list-style: none;
   padding: 0;
 }
+.owl-theme {
+  .owl-dots {
+    button {
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    .owl-dot {
+      span {
+        border: 1px solid $cl-gray;
+        background: $cl-white;
+      }
+      &.active span {
+        background: $cl-black;
+      }
+    }
+  }
+}

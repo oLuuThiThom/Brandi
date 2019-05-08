@@ -5,6 +5,13 @@ block head
 
 block main
   section.banner
+    .banner__img.js-banner__img.owl-carousel.owl-theme
+      .item1
+        img(src="images/bg1.jpg")
+      .item1
+        img(src="images/bg1.jpg")
+      .item1
+        img(src="images/bg1.jpg")
     .banner__info
       .banner__content
         h2 Meet Brandi!
@@ -20,7 +27,7 @@ block main
   section.section.features
     .container
       h2.section-title.features__title features
-      .product.owl-carousel.owl-theme.js-product
+      .product.owl-carousel.js-product.owl-theme
         .item
           .product__info.branding
             h3.product-title Branding
@@ -63,73 +70,104 @@ block main
       p.section-info Sed up perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan-tium, totam rem aperiam, eaque ab illo inventore.
       ul.nav.nav-tabs
         li.nav-item
-          a.nav-link.active(href="#") All
+          a.nav-link.active(href="#all" data-toggle="tab") All
         li.nav-item
-          a.nav-link(href="#!") Branding
+          a.nav-link(href="#branding" data-toggle="tab") Branding
         li.nav-item
-          a.nav-link(href="#!") Web
+          a.nav-link(href="#work-pro" data-toggle="tab") Web
         li.nav-item
-          a.nav-link(href="#!") Logo Design
+          a.nav-link(href="#work-pro" data-toggle="tab") Logo Design
         li.nav-item
-          a.nav-link(href="#!") Photography
-    .container-fluid
-      .row
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
-        .col-12.col-sm-6.col-md-3
-          .work-img
-            img.img-fluid(src="images/work1.jpg", alt="")
-            .layer
-              i.layer-eye.fas.fa-eye
-              div Labore et dolore magnam
-              span Photography
+          a.nav-link(href="#work-pro" data-toggle="tab") Photography
+    .tab-content
+      .container-fluid#all.tab-pane.active
+        .row
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+      .container-fluid#branding.tab-pane
+        .row
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
+          .col-12.col-sm-6.col-md-3
+            .work-img
+              img.img-fluid(src="images/work1.jpg", alt="")
+              .layer
+                i.layer-eye.fas.fa-eye
+                div Labore et dolore magnam
+                span Photography
   section.section.meet-team
     .container
       h2.section-title meet out team
@@ -356,7 +394,7 @@ block main
             i.fab.fa-fw.fa-dribbble
             i.fab.fa-fw.fa-google-plus-g.google
   section.section.map
-    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.1912863178334!2d105.7829304579628!3d21.01737300026917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab54ef80077d%3A0x1c375dcb13b05376!2zS2VhbmduYW0sIE3hu4UgVHLDrCwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1556905140599!5m2!1svi!2s" width="100%" height="220px" frameborder="0" allowfullscreen)
+    #map
   footer.footer
     .container
       .row

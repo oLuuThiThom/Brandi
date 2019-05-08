@@ -5,17 +5,28 @@
 
 .banner {
   min-height: 800px;
-  background: url('#{$path-image}/bg1.jpg') center center;
-  background-size: cover;
   position: relative;
 
   @include breakpoint-down(smallphone) {
     min-height: 400px;
   }
+  &__img {
+    position: absolute;
+    z-index: 3;
+    .item1 {
+      img {
+        height: 800px;
+      }
+    }
+  }
   &__info {
     text-align: center;
     color: $cl-white;
-    padding-top: 465px;
+    top: 465px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    z-index: 5;
 
     @include breakpoint-down(smallphone) {
       padding-top: 200px;
@@ -78,7 +89,7 @@
     font-size: $font-size-extra-large3;
     font-weight: $font-weight-light;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 
     @include breakpoint-down(phone) {
       font-size: $font-size-extra-large2;
@@ -102,6 +113,18 @@
     .google {
       color: $cl-white;
       opacity: 1;
+    }
+  }
+  .owl-theme {
+    .owl-dots {
+      .owl-dot span {
+        margin: 7.5px 7px;
+        border: 1px solid $cl-gray;
+        background: $cl-black;
+      }
+      .owl-dot.active span {
+        background: $cl-white;
+      }
     }
   }
 }
@@ -574,7 +597,10 @@ $span: 'span';
 .map {
   padding-bottom: 0;
   border-bottom: 5px solid $cl-black2;
-  max-height: 225px;
+  max-height: 220px;
+  #map {
+    height: 100%;
+  }
 }
 .footer {
   background: $cl-green-dark;
@@ -695,22 +721,4 @@ $span: 'span';
     }
   }
 }
-.owl-theme {
-  .owl-dots {
-    button {
-      &:focus {
-        outline: 0;
-        box-shadow: none;
-      }
-    }
-    .owl-dot {
-      span {
-        border: 1px solid $cl-gray;
-        background: $cl-white;
-      }
-      &.active span {
-        background: $cl-black;
-      }
-    }
-  }
-}
+

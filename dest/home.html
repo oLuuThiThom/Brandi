@@ -6,6 +6,7 @@
     <meta name="description" content="Home" />
     <meta name="keywords" content="Home" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&amp;callback=initMap"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
@@ -29,6 +30,11 @@
       </div>
     </header>
     <section class="banner">
+      <div class="banner__img js-banner__img owl-carousel owl-theme">
+        <div class="item1"><img src="images/bg1.jpg"></div>
+        <div class="item1"><img src="images/bg1.jpg"></div>
+        <div class="item1"><img src="images/bg1.jpg"></div>
+      </div>
       <div class="banner__info">
         <div class="banner__content">
           <h2>Meet Brandi!</h2>
@@ -40,7 +46,7 @@
     <section class="section features">
       <div class="container">
         <h2 class="section-title features__title">features</h2>
-        <div class="product owl-carousel owl-theme js-product">
+        <div class="product owl-carousel js-product owl-theme">
           <div class="item">
             <div class="product__info branding">
               <h3 class="product-title">Branding</h3>
@@ -103,68 +109,102 @@
         <h2 class="section-title">works</h2>
         <p class="section-info">Sed up perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan-tium, totam rem aperiam, eaque ab illo inventore.</p>
         <ul class="nav nav-tabs">
-          <li class="nav-item"><a class="nav-link active" href="#">All</a></li>
-          <li class="nav-item"><a class="nav-link" href="#!">Branding</a></li>
-          <li class="nav-item"><a class="nav-link" href="#!">Web</a></li>
-          <li class="nav-item"><a class="nav-link" href="#!">Logo Design</a></li>
-          <li class="nav-item"><a class="nav-link" href="#!">Photography</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#all" data-toggle="tab">All</a></li>
+          <li class="nav-item"><a class="nav-link" href="#branding" data-toggle="tab">Branding</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work-pro" data-toggle="tab">Web</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work-pro" data-toggle="tab">Logo Design</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work-pro" data-toggle="tab">Photography</a></li>
         </ul>
       </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
+      <div class="tab-content">
+        <div class="container-fluid tab-pane active" id="all">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
+        </div>
+        <div class="container-fluid tab-pane" id="branding">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
-              <div class="layer"><i class="layer-eye fas fa-eye"></i>
-                <div>Labore et dolore magnam</div><span>Photography</span>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="work-img"><img class="img-fluid" src="images/work1.jpg" alt="">
+                <div class="layer"><i class="layer-eye fas fa-eye"></i>
+                  <div>Labore et dolore magnam</div><span>Photography</span>
+                </div>
               </div>
             </div>
           </div>
@@ -375,7 +415,7 @@
       </div>
     </section>
     <section class="section map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.1912863178334!2d105.7829304579628!3d21.01737300026917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab54ef80077d%3A0x1c375dcb13b05376!2zS2VhbmduYW0sIE3hu4UgVHLDrCwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1556905140599!5m2!1svi!2s" width="100%" height="220px" frameborder="0" allowfullscreen></iframe>
+      <div id="map"></div>
     </section>
     <footer class="footer">
       <div class="container">
