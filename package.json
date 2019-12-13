@@ -43,7 +43,7 @@
     "gulp-watch": "^4.3.9",
     "install": "^0.8.1",
     "jquery": "^3.4.0",
-    "npm": "^3.10.6",
+    "npm": "^6.13.4",
     "postcss-assets": "^5.0.0",
     "owl.carousel": "^2.3.4",
     "pug": "^2.0.0-beta6",
